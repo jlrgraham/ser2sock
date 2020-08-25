@@ -498,7 +498,7 @@ int init_listen_socket_fd()
 #endif
 	{
 		/* create a listening socket fd */
-		listen_sock_fd = socket(AF_INET, SOCK_STREAM, 0);
+		listen_sock_fd = socket(AF_INET6, SOCK_STREAM, 0);
 		if (listen_sock_fd < 0)
 		{
 			log_message(STREAM_MAIN, MSG_BAD, "Fatal error creating our listening socket errno: %i\n",errno);
